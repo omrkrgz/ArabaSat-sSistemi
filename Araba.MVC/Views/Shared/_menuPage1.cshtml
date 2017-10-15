@@ -1,0 +1,178 @@
+﻿<div id="header">
+    <div class="container">
+        <div class="row">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="@Url.Action("Index","Home")" title="">
+                    <img src="../assets/img/logo.png" alt="Logo" />
+                </a>
+            </div>
+            <!-- End Logo -->
+        </div>
+    </div>
+</div>
+<!-- End Header -->
+<!-- Top Menu -->
+<div  id="hornav" class="bottom-border-shadow">
+    <div class="container no-padding border-bottom">
+        <div class="row">
+            <div class="col-md-10 no-padding">
+                <div class="visible-lg">
+                    <ul  id="hornavmenu" class="nav navbar-nav">
+                        <li>
+                            <a href="@Url.Action("Index","Home")" class="fa fa-home">ANASAYFA</a>
+                        </li>
+                        <li>
+                            <span class="fa fa-header ">hAKKIMIZDA</span>
+                            <ul>
+                                <li class="parent">
+                                    <span>Typography</span>
+
+                                    <ul>
+                                        <li>
+                                            <a href="features-typo-basic.html">Basic Typography</a>
+                                        </li>
+                                        <li>
+                                            <a href="features-typo-blockquotes.html">Blockquotes</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="parent">
+                                    <span>Components</span>
+                                    <ul>
+                                        <li>
+                                            <a href="features-labels.html">Labels</a>
+                                        </li>
+                                        <li>
+                                            <a href="features-progress-bars.html">Progress Bars</a>
+                                        </li>
+                                        <li>
+                                            <a href="features-panels.html">Panels</a>
+                                        </li>
+                                        <li>
+                                            <a href="features-pagination.html">Pagination</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="parent">
+                                    <span>Icons</span>
+                                    <ul>
+                                        <li>
+                                            <a href="features-icons.html">Icons General</a>
+                                        </li>
+                                        <li>
+                                            <a href="features-icons-social.html">Social Icons</a>
+                                        </li>
+                                        <li>
+                                            <a href="features-icons-font-awesome.html">Font Awesome</a>
+                                        </li>
+                                        <li>
+                                            <a href="features-icons-glyphicons.html">Glyphicons</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="features-testimonials.html">Testimonials</a>
+                                </li>
+                                <li>
+                                    <a href="features-accordions-tabs.html">Accordions & Tabs</a>
+                                </li>
+                                <li>
+                                    <a href="features-buttons.html">Buttons</a>
+                                </li>
+                                <li>
+                                    <a href="features-carousels.html">Carousels</a>
+                                </li>
+                                <li>
+                                    <a href="features-grid.html">Grid System</a>
+                                </li>
+                                <li>
+                                    <a href="features-animate-on-scroll.html">Animate On Scroll</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+
+
+                            <span class="fa fa-car">Araçlar</span>
+                            <ul>
+                                <li>
+                                    <a href="portfolio-2-column.html">Otomobil</a>
+                                </li>
+                                <li>
+                                    <a href="portfolio-3-column.html">Ticari Araç</a>
+                                </li>
+                                <li>
+                                    <a href="portfolio-4-column.html">Arazi Aracı</a>
+                                </li>
+                                <li>
+                                    <a href="portfolio-6-column.html"> Klasik Araçlar</a>
+                                </li>
+                            </ul>
+
+                        </li>
+                        <li>
+                            <a href="contact.html" class="fa fa-phone">İLETİŞİM</a>
+                        </li>
+                        <li>
+
+                            <ul>
+                                <li>
+                                    <a href="blog-list.html">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="blog-single.html">Blog Single Item</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+
+                            @if (HttpContext.Current.User.Identity.IsAuthenticated)
+                            {
+                                <span style="color:forestgreen"  class="fa fa-user"> <strong>Hoşgeldİn @HttpContext.Current.User.Identity.GetUserName()</strong> </span>
+                                    <ul>
+                                        <li >
+                                            <a href="@Url.Action("Profile","Account")">Profil Sayfam</a>
+                                        </li>
+                                        <li>
+                                            <a href="@Url.Action("Logout","Account")">Çıkış Yap</a>
+                                        </li>
+                                        
+                                    </ul>
+                            }
+                            else
+                            {
+                                <span class="fa fa-user">GİRİŞYAP</span>
+                                <ul>
+                                    <li>
+                                        <a href="@Url.Action("Register","Account")">KAYIT OL</a>
+                                    </li>
+                                    <li>
+                                        <a href="@Url.Action("Login","Account")">GİRİŞ YAP</a>
+                                    </li>
+                                </ul>
+                            }
+
+
+
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-2 no-padding">
+                <ul class="social-icons pull-right">
+
+                    <li class="social-twitter">
+                        <a href="#" target="_blank" title="Twitter"></a>
+                    </li>
+                    <li class="social-facebook">
+                        <a href="#" target="_blank" title="Facebook"></a>
+                    </li>
+                  
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

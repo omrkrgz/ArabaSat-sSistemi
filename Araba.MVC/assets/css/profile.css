@@ -1,0 +1,12 @@
+﻿body {
+
+}
+
+#content > div > div > div > div > form > div.col-md-6 > button
+{
+    margin-top:-10px;
+}
+#content > div > div > div > div > form > div.row > div
+{
+    margin-top:-40px;
+}
